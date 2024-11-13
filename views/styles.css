@@ -1,0 +1,37 @@
+
+/* Basic styling for the container */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Grid layout for responsive design */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Styling for images to make them responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Media query for smaller devices */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav {
+      font-size: 1rem;
+    }
+  }
+  
